@@ -7,71 +7,112 @@
     <link href="public/css/style.min.css" rel="stylesheet">
   </head>
   <body>
-    <div class="header" id="header">
-      <header>
-      <div class="name">
-        <h1>Diego Marcelo</h1>
-        <div className="nav">
-          <ul>
-            <li><a href="#banner">Eu</a></li>
-            <li><a href="#about">Objetivo</a></li>
-            <li><a href="#competence">Competnencias</a></li>
-            <li><a href="#experiences">Experiências</a></li>
-            <li><a href="#"></a></li>
-          </ul>
-        </div>
-      </div>
-      </header>
-      <div className="banner" id="banner">
-        <div className="bannerLeft">
-        </div>
-        <div className="bannerRight">
-          <h1>Diego Marcelo Costa da Silva</h1>
-          <h2>Desenvolvedor Front End</h2>
-          <h3>Rio de Janeiro, Rio de Janeiro, Brasil</h3>
-        </div>
+    <header>
+      <div class="Myimg"><div></div></div>
+      <div class="nav_linha">
+        <div class="nav">
+        <ul>
+          <li><a href="#me">Eu</a></li>
+          <li><a href="#competence">Competnencias</a></li>
+          <li><a href="#experiences">Experiências</a></li>
+          <li><a href="#"></a></li>
+        </ul>
       </div>
     </div>
-    <div className="about" id="about">
-      <p>Meu objetivo é atuar na área de tecnologia da informação e desenvolver meus conhecimentos na área.
-        Minhas experiências me fizeram evoluir, mas sei que tenho muito para aprender.
-      </p>
+    </header>
+
+    <div class="about abouts" id="me">
+      <div class="show">
+        <h1>Meu nome é <strong>Diego Marcelo Costa da Silva</strong></h1>
+        <h2>E sou um jovem <strong>Desenvolvedor Front End</strong></h2>
+        <h3>Nascido no interior do Rio de Janeiro e atualmente morando na cidade do <strong>Rio de Janeiro</strong></h3>
+        <h4>Meu objetivo é atuar na área de tecnologia da informação e desenvolver meus conhecimentos na área.
+          <br />Minhas experiências me fizeram evoluir, mas sei que tenho muito para aprender.
+          <div class="pontos">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </h4>
+      </div>
+      <div class="about-left">
+      </div>
+      <div class="about-right">
+      </div>
     </div>
-    <div className="competence" id="competence">
-      <div className="content">
+
+    <div class="competence" id="competence">
+      <div class="content">
         <p>HTML5</p>
-        <div className="progress">
-          <div className="HTML5"></div>
+        <div class="progress">
+          <div class="HTML5"></div>
         </div>
       </div>
-      <div className="content">
+      <div class="content">
         <p>CSS3</p>
-        <div className="progress">
-          <div className="CSS3"></div>
+        <div class="progress">
+          <div class="CSS3"></div>
         </div>
       </div>
-      <div className="content">
+      <div class="content">
         <p>JS</p>
-        <div className="progress">
-          <div className="JS"></div>
+        <div class="progress">
+          <div class="JS"></div>
         </div>
       </div>
-      <div className="content">
+      <div class="content">
         <p>React</p>
-        <div className="progress">
-          <div className="React"></div>
+        <div class="progress">
+          <div class="React"></div>
         </div>
       </div>
-      <div className="all">
-        Ionic – React – Metodologias Ágeis - Scrum – Kanban - TypesScript - SASS – Developer tools –
-        Gulp.js – AngularJS - HTML - HTML5 - CSS - Bootstrap - jQuery - Linux - Google Analytics -
-        Selenium Testing – Git - GitHub - CSS3 - Google Tag Manager - MySQL - Django - Google Doc -
-        Testes funcionais - Ms Office - Ms Excel - Ms PowerPoint – JavaScript - English - Inglês - Testes -
-        Liderança de equipe - Planejamento estratégico - Estratégia empresarial - Planejamento empresarial -
-        Relacionamento interpessoal
+      <div class="content">
+        <p>Angular</p>
+        <div class="progress">
+          <div class="HTML5"></div>
+        </div>
+      </div>
+      <div class="content">
+        <p>PHP</p>
+        <div class="progress">
+          <div class="HTML5"></div>
+        </div>
+      </div>
+      <div class="content">
+        <p>Ionic</p>
+        <div class="progress">
+          <div class="HTML5"></div>
+        </div>
+      </div>
+      <div class="content">
+        <p>SASS</p>
+        <div class="progress">
+          <div class="HTML5"></div>
+        </div>
+      </div>
+      <div class="content">
+        <p>GIT</p>
+        <div class="progress">
+          <div class="HTML5"></div>
+        </div>
+      </div>
+      <div class="content">
+        <p>Linux</p>
+        <div class="progress">
+          <div class="HTML5"></div>
+        </div>
       </div>
     </div>
-    <div className="experiences" id="experiences">
+    <div class="all" id="all">
+      Ionic – React – Metodologias Ágeis - Scrum – Kanban - TypesScript - SASS – Developer tools –
+      Gulp.js – AngularJS - HTML - HTML5 - CSS - Bootstrap - jQuery - Linux - Google Analytics -
+      Selenium Testing – Git - GitHub - CSS3 - Google Tag Manager - MySQL - Django - Google Doc -
+      Testes funcionais - Ms Office - Ms Excel - Ms PowerPoint – JavaScript - English - Inglês - Testes -
+      Liderança de equipe - Planejamento estratégico - Estratégia empresarial - Planejamento empresarial -
+      Relacionamento interpessoal
+    </div>
+
+    <div class="experiences" id="experiences">
       <h2>Desenvolvedor Front End Junior</h2>
       <h3>Empresa: <strong>Ventron</strong></h3>
       <h3>Período: dez de 2016 – o momento  Duração do emprego6 meses</h3>
@@ -92,5 +133,22 @@
           <li>- Metodologia Bem</li>
         </ul>
       </div>
+
+      <script type="text/javascript">
+      window.onscroll = function() {myFunction()};
+        function myFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("me").className = "about abouts-next";
+            document.getElementsByClassName("show")[0].className = "shows";
+            document.getElementsByClassName("show")[1].className = "shows";
+            console.log("aqui");
+        } else {
+            document.getElementById("me").className = "about abouts";
+            document.getElementsClassName("show")[0].className = "";
+            document.getElementsClassName("show")[1].className = "";
+            console.log("não");
+          }
+      }
+      </script>
   </body>
 </html>
