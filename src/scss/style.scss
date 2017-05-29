@@ -257,3 +257,21 @@ header {
       }
     }
   }
+
+  .contents-models {
+    ul {
+      position: relative;
+      width: 80%;
+      li {
+        display: inline;
+        margin: -135px;
+        &:hover {
+          position: inherit;
+        }
+        img {
+          width: 30%;
+          height: 350px;
+        }
+      }
+    }
+  }
