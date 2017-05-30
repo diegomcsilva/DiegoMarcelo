@@ -47,12 +47,12 @@ body {
 
 header {
   .Myimg {
-    border: 15px solid #00BCD4;
     display: inline-block;
     border-radius: 80px;
     margin-top: 25px;
     margin-left: 40px;
     div {
+      border: 15px solid #00BCD4;
       width: 125px;
       height:125px;
       padding: 5px;
@@ -61,7 +61,6 @@ header {
       background: url(../../src/images/me.jpg);
       background-size: 100%;
       background-repeat: no-repeat;
-      border: 2px solid #000;
       &:hover {
         transform: rotateY(180deg);
         transition: 3s transform, 2s background;
@@ -191,7 +190,7 @@ header {
 
   .competence {
     background-color: rgba(255,255,255,0.8);
-    height: 400px;
+    height: 280px;
     margin-top: 45px;
     .content {
       width: 33.33%;
@@ -210,7 +209,7 @@ header {
         height: 20px;
         width: 70%;
         border-radius: 15px;
-        background: rgba(0, 0, 0,0.3);
+        background: linear-gradient(to top left, #eaeaea, #545454);
         margin-right: 20px;
         div {
           height: inherit;
@@ -219,22 +218,52 @@ header {
         }
         .HTML5 {
           width: 95%;
-          background: linear-gradient(to top left, #e44d26, #8e0000);
+          background: linear-gradient(to top left, #8e0000, #e44d26);
         }
         .CSS3 {
-          width: 85%;
-          background: linear-gradient(to top left, #0270bb, #004879);
+          width: 90%;
+          background: linear-gradient(to top left,  #004879, #0270bb);
           background-color: #0270bb;
         }
         .JS {
-          width: 60%;
-          background: linear-gradient(to top left, #f7df1e, #8a7b00);
+          width: 75%;
+          background: linear-gradient(to top left, #8a7b00, #f7df1e);
           background-color: #f7df1e;
         }
         .React {
           width: 50%;
           background: linear-gradient(to top left, #61dafb, #007190);
           background-color: #61dafb;
+        }
+        .Angular {
+          width: 65%;
+          background: linear-gradient(to top left, #790c00, #c4473a);
+          background-color: #c4473a;
+        }
+        .Php {
+          width: 65%;
+          background: linear-gradient(to top left, #101777, #777bb3);
+          background-color: #777bb3;
+        }
+        .Ionic {
+          width: 60%;
+          background: linear-gradient(to top left, #003894, #4e8ef7);
+          background-color: #4e8ef7;
+        }
+        .Sass {
+          width: 80%;
+          background: linear-gradient(to top left, #8c0d4d, #cf649a);
+          background-color: #cf649a;
+        }
+        .Git {
+          width: 80%;
+          background: linear-gradient(to top left, #000000, #5d5c5c);
+          background-color: #323131;
+        }
+        .Linux {
+          width: 75%;
+          background: linear-gradient(to top left, #a56903, #ffc25a);
+          background-color: #ffc25a;
         }
       }
     }
@@ -264,7 +293,7 @@ header {
       width: 80%;
       li {
         display: inline;
-        margin: -135px;
+        margin: -35px;
         &:hover {
           position: inherit;
         }
@@ -273,5 +302,93 @@ header {
           height: 350px;
         }
       }
+    }
+    h2 {
+      text-align: center;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 992px) {
+    header {
+      .Myimg {
+        display: block;
+        border-radius: 80px;
+        margin-top: 90px;
+        margin-left: 0px;
+      }
+      .nav_linha {
+        float: right;
+        width: 100%;
+        z-index: 2;
+        top: 0px;
+        .nav {
+          margin-right: 0px;
+          margin-top: 20px;
+          display: flex;
+          float: initial;
+        }
+        .social {
+          position: absolute;
+          top: 0px;
+          ul {
+            display: flex;
+            li {
+              margin: 0 2%;
+              &:first-child {
+                margin-left: 0px;
+              }
+              list-style: none;
+            }
+          }
+        }
+      }
+    }
+    .about {
+      height: 740px;
+      .shows {
+        h1, h3 {
+          strong {
+            font-size: 2.0em;
+            display: block;
+          }
+        }
+        h2 {
+          strong {
+            font-size: 1.7em;
+            display: block;
+          }
+        }
+      }
+    }
+    .all {
+      font-size: 2.1em;
+      text-align: center;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 768px) {
+    .competence {
+      height: 390px;
+      .content {
+        width: 45%;
+        margin-top: 20px;
+        padding-top: 15px;
+        display: inline-block;
+        text-align: center;
+        padding: 6px;
+        float: none;
+        p {
+          text-align: center;
+          margin-left: 0px;
+          width: 100%;
+        }
+        .progress {
+          width: 100%;
+        }
+      }
+    }
+    .all {
+      font-size: 1.4em;
+      text-align: center;
     }
   }
