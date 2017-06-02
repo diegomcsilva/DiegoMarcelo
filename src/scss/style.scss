@@ -78,6 +78,10 @@ header {
       li {
         list-style: none;
         margin: 0 8px;
+        &:hover {
+          transition: transform 2s;
+          transform: rotate(360deg);
+        }
         a {
           i {
           font-size: 1.5em;
@@ -85,11 +89,43 @@ header {
           background: gray;
           padding: 10px;
           margin-top: 25px;
-          border-radius: 25px;
           width: 25px;
           height: 25px;
           text-align: center;
-        }
+          &.fa-linkedin-square {
+            background-color: #0077b5;
+            transition: 3s;
+            }
+            &:hover {
+              border-radius: 25px;
+              transition: 3s;
+              }
+          &.fa-facebook-official {
+            background-color: #3b5998;
+            transition: 3s;
+            }
+            &:hover {
+              border-radius: 25px;
+              transition: 3s;
+              }
+          &.fa-github-square {
+            background-color: #323131;
+            transition: 3s;
+            }
+            &:hover {
+              border-radius: 25px;
+              transition: 3s;
+              }
+          &.fa-google-plus-official {
+            background-color: #ec2015;
+            background: linear-gradient( #960800, #ec2015);
+            transition: 3s;
+            &:hover {
+              border-radius: 25px;
+              transition: 3s;
+              }
+            }
+          }
         }
       }
     }
@@ -116,7 +152,7 @@ header {
       h1, h2, h3 {
         strong {
           color: #fff;
-          font-size: 2.3em;
+          font-size: 2em;
           letter-spacing: 6px;
           font-weight: bold;
           font-family: monospace;
@@ -278,11 +314,28 @@ header {
   }
   .experiences {
     padding: 10px 20px;
-    background: gray;
+    background: #0c1e2b;
     color: #fff;
+    text-align: center;
+    display: inline-block;
     ul {
       li {
         list-style: none;
+      }
+    }
+    .experience_group {
+      display: flex;
+      .experience_content {
+        width: 40%;
+        background-color: #484f5a;
+        padding: 25px;
+        margin: 25px auto;
+        text-align: justify;
+        float: left;
+        box-shadow: 5px 5px 9px 5px black;
+        p {
+          text-align: justify;
+        }
       }
     }
   }
@@ -333,7 +386,7 @@ header {
           ul {
             display: flex;
             li {
-              margin: 0 2%;
+              margin: 0 8%;
               &:first-child {
                 margin-left: 0px;
               }
@@ -344,7 +397,7 @@ header {
       }
     }
     .about {
-      height: 740px;
+      height: 700px;
       .shows {
         h1, h3 {
           strong {
@@ -390,5 +443,14 @@ header {
     .all {
       font-size: 1.4em;
       text-align: center;
+    }
+    .experiences {
+      .experience_group {
+        height: 700px;
+        display: block;
+        .experience_content {
+          width: auto;
+        }
+      }
     }
   }
