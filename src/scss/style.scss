@@ -155,7 +155,7 @@ header {
       h1 {
         font-size: 3em;
         strong {
-          font-size: 1.5em;
+          font-size: 1.3em;
         }
       }
       h2 {
@@ -296,7 +296,7 @@ header {
           background-color: #f7df1e;
         }
         .React {
-          width: 50%;
+          width: 65%;
           background: linear-gradient(to top left, #61dafb, #007190);
           background-color: #61dafb;
         }
@@ -316,7 +316,7 @@ header {
           background-color: #4e8ef7;
         }
         .Sass {
-          width: 80%;
+          width: 70%;
           background: linear-gradient(to top left, #8c0d4d, #cf649a);
           background-color: #cf649a;
         }
@@ -390,7 +390,34 @@ header {
     h2 {
       text-align: center;
     }
+    .port_link {
+      text-decoration: none;
+      color: #23a8e0;
+      margin: 25px auto 50px;
+      display: block;
+      font-size: 1.5em;
+      border-bottom: 2px solid;
+      width: 50%;
+      text-align: center;
+    }
+    .port_btn {
+      width: 20pX;
+      height: 20px;
+      background: white;
+      border-radius: 15px;
+      position: absolute;
+      bottom: 3px;
+      left: 50%;
+      &:active {
+        box-shadow: inset 1px 0px 6px 2px black;
+        transition: 0.3s;
+      }
+    }
   }
+
+
+/*Classe de media*/
+
 
   @media (min-width: 320px) and (max-width: 992px) {
     header {
