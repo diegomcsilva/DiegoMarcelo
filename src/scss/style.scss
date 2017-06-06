@@ -409,8 +409,8 @@ header {
       bottom: 3px;
       left: 50%;
       &:active {
-        box-shadow: inset 1px 0px 6px 2px black;
-        transition: 0.3s;
+        box-shadow: inset 1px 0px 5px 2px black;
+        transition: 0.5s;
       }
     }
   }
