@@ -162,8 +162,10 @@ header {
         font-size: 2em;
       }
       span {
+        &.marca {
         font-size: 2em;
         color: #00bcd4;
+        }
       }
     }
     /*.shows {
@@ -439,6 +441,12 @@ header {
           display: flex;
           float: initial;
           background-color: #000;
+          ul {
+            li {
+              display: inline-block;
+              padding: 10px 8px;
+            }
+          }
         }
         .social {
           position: absolute;
@@ -457,7 +465,7 @@ header {
       }
     }
     .about {
-      height: 420px;
+      height: 300px;
       .shows {
         h1, h3 {
           strong {
@@ -478,8 +486,30 @@ header {
       text-align: center;
     }
   }
+  .contents-models {
+    ul {
+      width: inherit;
+      li {
+        border: 15px outset #aeaeae;
+      }
+      img {
+        height: 350px;
+        width: 90%;
+      }
+      .port_btn {
+        display: none;
+      }
+    }
+  }
 
   @media (min-width: 320px) and (max-width: 768px) {
+    .show {
+      span {
+      &.none {
+        display: none;
+        }
+      }
+    }
     .competence {
       height: 390px;
       .content {
