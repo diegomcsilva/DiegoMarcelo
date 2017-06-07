@@ -378,19 +378,23 @@ header {
       text-align: center;
       li {
         display: inline;
-        border: 25px outset #aeaeae;
-        border-radius: 30px;
         display: inline-block;
         }
         img {
           height: 500px;
-          &:hover {
-            filter: blur(3px);
-        }
       }
     }
     h2 {
       text-align: center;
+    }
+    .portifolio_desktop {
+      width: 50%;
+      margin-top: 30px;
+      img {
+        width: 100%;
+        border: 20px outset #aeaeae;
+        border-radius: 20px;
+      }
     }
     .port_link {
       text-decoration: none;
@@ -399,23 +403,10 @@ header {
       display: block;
       font-size: 1.5em;
       border-bottom: 2px solid;
-      width: 50%;
+      width: 90%;
       text-align: center;
-    }
-    .port_btn {
-      width: 20pX;
-      height: 20px;
-      background: white;
-      border-radius: 15px;
-      position: absolute;
-      bottom: 3px;
-      left: 50%;
-      &:active {
-        box-shadow: inset 1px 0px 5px 2px black;
-        transition: 0.5s;
       }
     }
-  }
 
 
 /*Classe de media*/
@@ -490,11 +481,13 @@ header {
     ul {
       width: inherit;
       li {
-        border: 15px outset #aeaeae;
+        width: 55%;
       }
       img {
         height: 350px;
-        width: 90%;
+        width: 100%;
+        border: 15px outset #aeaeae;
+        border-radius: 30px;
       }
       .port_btn {
         display: none;
