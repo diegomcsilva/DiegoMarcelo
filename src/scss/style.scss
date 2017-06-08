@@ -22,11 +22,11 @@ body {
   float: right;
   margin-top: 40px;
   margin-right: 30px;
-  transition: 2s;
+  transition: 3s cubic-bezier(0.25, 0.63, 0.71, 0.41);
   &:hover {
     background: #444444;
     border-radius: 15px;
-    transition: 2s;
+    transition: 3s cubic-bezier(0.25, 0.63, 0.71, 0.41);
   }
   ul {
     padding: 10px;
