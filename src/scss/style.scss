@@ -368,15 +368,37 @@ header {
         float: left;
         color: #000;
         border-left: 4px solid #00bcd4;
+        /*height: 310px;*/
+        /*overflow: hidden;
+        position: relative;*/
+        padding-bottom: 0px;
         p {
           text-align: justify;
         }
         h2 {
           margin-bottom: 15px;
+          min-height: 55px;
+        }
+        .mais {
+          background-color: white;
+          width: 100%;
+          display: block;
+          position: sticky;
+          height: 25px;
+          text-align: center;
+          margin-top: 10%;
+          /*position: absolute;
+          bottom: 0px;*/
         }
       }
       &_about {
         margin-top: 15px;
+        display: none;
+        /*height: 110px;
+        overflow: hidden;*/
+        ul {
+          /*height: 110px;*/
+        }
       }
     }
   }
