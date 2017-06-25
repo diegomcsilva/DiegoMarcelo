@@ -1,6 +1,6 @@
 * {
   margin: 0 auto;
-  font-family: 'Barrio', cursive;
+  /*font-family: 'Barrio', cursive;*/
   letter-spacing: 2px;
 }
 
@@ -53,6 +53,7 @@ body {
 
 header {
   background-color: #1b1b1d;
+  font-family: 'Barrio', cursive;
   .Myimg {
     display: inline-block;
     border-radius: 80px;
@@ -259,7 +260,7 @@ header {
     background-color: rgba(255,255,255,0.8);
     height: 280px;
     margin-top: 45px;
-    width: 90%;
+    width: 80%;
     .content {
       width: 33.33%;
       margin-top: 20px;
@@ -336,7 +337,7 @@ header {
     }
   }
   .all {
-    width: 90%;
+    width: 80%;
     padding: 10px;
     border: 1px solid black;
     background: rgba(0, 0, 0, 0.7);
@@ -344,28 +345,38 @@ header {
     margin: 30px auto;
   }
   .experiences {
-    padding: 10px 20px;
     color: #fff;
     text-align: center;
     display: inline-block;
+    width: 80%;
+    margin: 0 10%;
     ul {
       li {
         list-style: none;
       }
     }
-    .experience_group {
-      display: flex;
-      .experience_content {
-        width: 40%;
-        background-color: #484f5a;
-        padding: 25px;
-        margin: 25px auto;
+    .experience {
+      &_group {
+        display: flex;
+      }
+      &_content {
+        width: 50%;
+        padding: 20px 25px;
+        margin: 25px 0;
+        margin-right: 5%;
         text-align: justify;
         float: left;
-        box-shadow: 5px 5px 9px 5px black;
+        color: #000;
+        border-left: 4px solid #00bcd4;
         p {
           text-align: justify;
         }
+        h2 {
+          margin-bottom: 15px;
+        }
+      }
+      &_about {
+        margin-top: 15px;
       }
     }
   }
