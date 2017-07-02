@@ -11,6 +11,7 @@ function competence() {
   $.getJSON("https://diegomcsilva.github.io/DiegoMarcelo/data.json", function(json) {
       console.log(json["0"].competence);
       var total = json["0"].competence.length;
+      var group="";
       for (i = 0; i < total; i++) {
         console.log(json["0"].competence[i].nome);
         group +="<div class='content'><p>" + json["0"].competence[i].nome + "</p><div class='progress'><div class='" + json["0"].competence[i].nome + "' style='width:" + json["0"].competence[i].nivel + "%;'></div></div></div>";
